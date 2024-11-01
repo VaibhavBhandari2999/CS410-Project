@@ -1,0 +1,6 @@
+langchain
+sentence_transformers
+pinecone
+google.api
+pinecone[grpc]
+ollama
