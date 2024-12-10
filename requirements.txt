@@ -4,3 +4,4 @@ pinecone
 google.api
 pinecone[grpc]
 ollama
+sentencepiece
