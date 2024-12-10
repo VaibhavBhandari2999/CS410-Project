@@ -1,6 +1,30 @@
 # CS410-Project
 This repository contains the codebase of the project 'Tech News Summarization through RAG' developed for CS410.
 
+## Dataset
+
+The dataset we're using is https://research.signal-ai.com/datasets/signal1m.html
+
+It contains 1 million articles that are mainly English, but they also include non-English and multi-lingual articles.
+However as each article is extremely large, we are using approximately 1500 arcticles because of computational limitations.
+
+The dataset is in JSONL format where each line is a JSON object representing an article. 
+
+Each article has the following fields:
+
+- id: a unique identifier for the article
+- title: the title of the article
+- content: the textual content of the article (may occasionally contain HTML and JavaScript content)
+- source: the name of the article source (e.g. Reuters)
+- published: the publication date of the article
+- media-type: either "News" or "Blog"
+
+
+A summary of general statistics of the dataset is:-
+- The number of individual unique sources are over 93k
+- The dataset contains 265,512 Blog articles and 734,488 News articles
+- The average length of an article is 405 words
+
 ## Installation
 
 >Download the model binary
@@ -9,6 +33,7 @@ This repository contains the codebase of the project 'Tech News Summarization th
 >>Download the 'ollama-linux-amd64' binary and keep it in the same folder as the ipynb file
 >
 >
+
 >Installation
     Install all the dependencies and libraries with the command 'pip install -r requirements.txt'
 
